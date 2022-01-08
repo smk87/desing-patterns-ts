@@ -6,7 +6,6 @@ When this is violated? - e.g:
 2. You have presentation logic
 3. Fille/DB/API execution
 
-
 Below we have the solutions.
 */
 

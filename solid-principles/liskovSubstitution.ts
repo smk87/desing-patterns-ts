@@ -1,6 +1,5 @@
 /*
 Liskov Substitution - Alson known as substitutability. You should be able to use a subclass in place of its parent class. In other words, A subclass should be used wherever it's base class can be used.
-
 */
 
 export class QuizQuestion {
