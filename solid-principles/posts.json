@@ -1,0 +1,20 @@
+[
+	{
+		"id": 1,
+		"title": "Lorem ipsum dolor sit amet",
+		"body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec interdum tellus, ac sagittis turpis. Nunc fringilla erat dapibus, cursus ligula vel, hendrerit diam. Maecenas non venenatis est, ac semper nisi. Cras sollicitudin ultrices feugiat. ",
+		"postedBy": "Jon Doe"
+	},
+	{
+		"id": 2,
+		"title": "Suspendisse non eleifend mauris",
+		"body": "Suspendisse non eleifend mauris. Quisque vestibulum sem vitae scelerisque convallis. Cras convallis a magna ornare euismod. Duis non felis quis augue sagittis malesuada a vitae risus. Sed eros orci, convallis nec eros quis, aliquam euismod metus. Mauris luctus lorem eget ante aliquam, sed laoreet tellus blandit. Duis auctor urna at est sodales commodo. Integer vestibulum blandit urna.",
+		"postedBy": "Jon Doe"
+	},
+	{
+		"id": 3,
+		"title": "Aliquam elementum finibus euismod",
+		"body": "Aliquam elementum finibus euismod. Nulla nec eros erat. Phasellus eget elementum odio, nec aliquam risus. Maecenas id felis nunc. Aliquam a nibh sem. Aenean et leo sed sapien dapibus dignissim a at sapien",
+		"postedBy": "Jon Doe"
+	}
+]
