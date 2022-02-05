@@ -10,7 +10,7 @@ Reflection - The ability to make use of code metadata to provide runtime informa
 4. Allow dependency injection to work
 */
 
-import { IoCContainer } from './ioc-container';
+import { IoCContainer, Register } from './ioc-container';
 
 interface IDepA {
 	doA(): void;
@@ -24,18 +24,21 @@ interface IDepC {
 	doC(): void;
 }
 
+@Register('IDepA')
 class ConcreteA implements IDepA {
 	doA(): void {
 		console.log('Doing A');
 	}
 }
 
+@Register('IDepB')
 class ConcreteB implements IDepB {
 	doB(): void {
 		console.log('Doing B');
 	}
 }
 
+@Register('IDepC', ['IDepA', 'IDepB'])
 class ConcreteC implements IDepC {
 	constructor(private _concreteA: IDepA, private _concreteB: IDepB) {}
 
@@ -47,9 +50,9 @@ class ConcreteC implements IDepC {
 }
 
 let container = IoCContainer.instance;
-container.register('IDepA', [], ConcreteA);
-container.register('IDepB', [], ConcreteB);
-container.register('IDepC', ['IDepA', 'IDepB'], ConcreteC);
+// container.register('IDepA', [], ConcreteA);
+// container.register('IDepB', [], ConcreteB);
+// container.register('IDepC', ['IDepA', 'IDepB'], ConcreteC);
 
 // let a = container.resolve<IDepA>("IDepA");
 // a.doA();
